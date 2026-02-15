@@ -4,6 +4,7 @@ import 'package:grenn_mart/core/constants/app_images.dart';
 import 'package:grenn_mart/core/styles/colors.dart';
 import 'package:grenn_mart/core/styles/text_style.dart';
 import 'package:grenn_mart/core/styles/text_style.dart';
+import 'package:grenn_mart/core/widgets/main_button.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -30,11 +31,17 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
 
             Positioned(
               bottom: 70,
-              right: 0,
-              left: 0,
+              right: 20,
+              left: 20,
               child: Column(
                 children: [
-                  SvgPicture.asset(AppImages.carrotSvg),
+                  SvgPicture.asset(
+                    AppImages.carrotSvg,
+                    colorFilter: ColorFilter.mode(
+                      AppColors.backgroundColor,
+                      BlendMode.srcIn,
+                    ),
+                  ),
                   SizedBox(height: 35),
                   Text(
                     "Welcome\nto GreenMart",
@@ -49,24 +56,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       color: AppColors.backgroundColor,
                     ),
                   ),
-                  SizedBox(height: 15),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.primaryColor,
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 40,
-                        vertical: 15,
-                      ),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                    onPressed: () {},
-                    child: Text(
-                      "Get Started",
-                      style: TextStyles.body.copyWith(color: Colors.white),
-                    ),
-                  ),
+                  SizedBox(height: 10),
+                  main_button(text: "Get Started"),
                 ],
               ),
             ),

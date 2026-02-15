@@ -22,6 +22,16 @@ class MainApp extends StatelessWidget {
           seedColor: AppColors.primaryColor,
           onSurface: AppColors.blackColor,
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primaryColor,
+            foregroundColor: Colors.white,
+            minimumSize: Size(double.infinity, 55),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            ),
+          ),
+        ),
       ),
       builder: (context, child) {
         return SafeArea(
