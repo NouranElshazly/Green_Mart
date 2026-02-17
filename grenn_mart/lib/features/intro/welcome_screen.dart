@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart ';
 import 'package:flutter_svg/svg.dart';
 import 'package:grenn_mart/core/constants/app_images.dart';
+import 'package:grenn_mart/core/functions/navigation.dart%20';
 import 'package:grenn_mart/core/styles/colors.dart';
 import 'package:grenn_mart/core/styles/text_style.dart';
 import 'package:grenn_mart/core/styles/text_style.dart';
 import 'package:grenn_mart/core/widgets/main_button.dart';
+import 'package:grenn_mart/features/auth/pages/login_page.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -57,7 +59,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     ),
                   ),
                   SizedBox(height: 10),
-                  main_button(text: "Get Started"),
+                  main_button(
+                    text: "Get Started",
+                    onPressed: () {
+                      pushReplace(context, LoginPage());
+                    },
+                  ),
                 ],
               ),
             ),

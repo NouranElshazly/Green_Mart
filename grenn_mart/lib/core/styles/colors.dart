@@ -6,4 +6,5 @@ abstract class AppColors {
   static const grayColor = Color(0xFF7C7C7C);
   static const blackColor = Color(0xFF181725);
   static const tangoColor = Color(0xFFF37A20);
+  static const Color accentColor = Color(0XFFF0F1F2);
 }

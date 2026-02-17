@@ -14,13 +14,15 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-  // delay 3 second before navigate to welcome  screen
   void initState() {
-    Future.delayed(const Duration(seconds: 3), () {
-      // navigate to welcome screen
-      pushReplace(context, const WelcomeScreen());
-    });
     super.initState();
+    // delay 3 second before navigate to welcome screen
+    Future.delayed(const Duration(seconds: 3), () {
+      if (mounted) {
+        // navigate to welcome screen
+        pushReplace(context, const WelcomeScreen());
+      }
+    });
   }
 
   @override
