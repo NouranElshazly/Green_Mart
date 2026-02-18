@@ -5,6 +5,7 @@ import 'package:grenn_mart/core/widgets/custome_text_form.dart';
 import 'package:grenn_mart/core/widgets/main_button.dart';
 import 'package:grenn_mart/core/functions/navigation.dart';
 import 'package:grenn_mart/features/auth/pages/verificationcodepage.dart';
+import 'package:grenn_mart/core/styles/colors.dart';
 
 class MobileNumberPage extends StatefulWidget {
   const MobileNumberPage({super.key});
@@ -18,7 +19,7 @@ class _MobileNumberPageState extends State<MobileNumberPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(backgroundColor: AppColors.backgroundColor),
       body: Center(
         child: Form(
           key: formKey,
