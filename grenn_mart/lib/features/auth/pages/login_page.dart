@@ -10,6 +10,7 @@ import 'package:grenn_mart/core/widgets/main_button.dart';
 import 'package:grenn_mart/core/widgets/passwordtextrform.dart';
 import 'package:grenn_mart/core/widgets/t_e_x_trich_c_ustomer_widget.dart';
 import 'package:grenn_mart/features/auth/pages/sign_page.dart';
+import 'package:grenn_mart/features/main/main_app_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -92,7 +93,9 @@ class _LoginPageState extends State<LoginPage> {
                   main_button(
                     text: 'Login  ',
                     onPressed: () {
-                      if (formkey.currentState!.validate()) {}
+                      if (formkey.currentState!.validate()) {
+                        push(context, MainAppPage());
+                      }
                     },
                   ),
                   SizedBox(height: 25),

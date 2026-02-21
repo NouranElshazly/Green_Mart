@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:grenn_mart/core/styles/colors.dart';
 import 'package:grenn_mart/core/styles/text_style.dart';
 import 'package:grenn_mart/core/widgets/main_button.dart';
+import 'package:grenn_mart/features/main/main_app_page.dart';
 import 'package:pinput/pinput.dart';
 import 'package:grenn_mart/core/functions/navigation.dart';
 
@@ -105,7 +106,7 @@ class _VerificationcodepageState extends State<Verificationcodepage> {
         elevation: 0,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.all(20),
         child: Form(
           key: formKey,
           child: Center(
@@ -157,6 +158,7 @@ class _VerificationcodepageState extends State<Verificationcodepage> {
                       if (_isOtpCorrect) {
                         // Navigate to next screen
                         print('OTP Verified Successfully!');
+                        push(context, MainAppPage());
                       }
                     },
 
@@ -225,7 +227,7 @@ class _VerificationcodepageState extends State<Verificationcodepage> {
                     if (_isOtpCorrect) {
                       print('Navigating to next screen...');
                       // Navigate to home or next screen
-                      // push(context, HomeScreen());
+                      push(context, MainAppPage());
                     }
                   },
                 ),
