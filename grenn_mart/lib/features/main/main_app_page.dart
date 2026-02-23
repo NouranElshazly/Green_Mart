@@ -4,6 +4,7 @@ import 'package:grenn_mart/core/constants/app_images.dart';
 import 'package:grenn_mart/core/styles/colors.dart';
 import 'package:grenn_mart/core/widgets/svg_picture_custome.dart';
 import 'package:grenn_mart/features/cart/pages/cart_screen.dart';
+import 'package:grenn_mart/features/explore/pages/explore_screen.dart';
 import 'package:grenn_mart/features/favourite/pages/favourite_screen.dart';
 import 'package:grenn_mart/features/home/pages/home_screen.dart';
 import 'package:grenn_mart/features/profile/pages/profile_screen.dart';
@@ -19,7 +20,7 @@ class _MainAppPageState extends State<MainAppPage> {
   int currentIndex = 0;
   List<Widget> pages = [
     HomeScreen(),
-    Center(child: Text("Explore")),
+    ExploreScreen(),
     CartScreen(),
     FavouriteScreen(),
     ProfileScreen(),

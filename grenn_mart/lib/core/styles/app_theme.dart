@@ -54,5 +54,6 @@ ThemeData appTheme() {
         minimumSize: Size.zero,
       ),
     ),
+    dividerColor: Colors.transparent,
   );
 }

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+// import 'package:grenn_mart/core/styles/colors.dart';
 import 'package:grenn_mart/core/styles/text_style.dart';
 import 'package:grenn_mart/features/cart/widgets/cart_item_card.dart';
 import 'package:grenn_mart/features/home/data/product_data.dart';
+// import 'package:grenn_mart/features/cart/widgets/cart_builder.dart';
+import 'package:grenn_mart/features/cart/widgets/checkout_bottom_sheet.dart';
 
 class CartBuilder extends StatelessWidget {
   const CartBuilder({super.key, required this.cartItems});
@@ -27,7 +30,9 @@ class CartBuilder extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(20),
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              showCheckoutBottomSheet(context, cartItems);
+            },
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

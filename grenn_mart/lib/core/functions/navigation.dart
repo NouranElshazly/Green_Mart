@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart ';
+import 'package:flutter/material.dart';
 
 void pushReplace(BuildContext context, Widget screen) {
   Navigator.pushReplacement(

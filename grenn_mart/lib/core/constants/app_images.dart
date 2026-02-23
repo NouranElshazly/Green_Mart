@@ -9,4 +9,5 @@ abstract class AppImages {
   static const String heartSvg = 'assets/icons/heart.svg';
   static const String userSvg = 'assets/icons/user.svg';
   static const String storeSvg = 'assets/icons/store.svg';
+  static const String orderAccepted = 'assets/images/ORDER_PLACEMENT.png';
 }
