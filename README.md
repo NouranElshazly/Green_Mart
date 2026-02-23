@@ -24,7 +24,18 @@ A modern grocery shopping app for fresh produce built using Flutter. GreenMart p
 </p>
 <p float="left">
   <img src="grenn_mart/ScreenShots/screen11.png" width="45%" />
- 
+  <img src="grenn_mart/ScreenShots/screen12.png" width="45%" />
+
+</p>
+<p float="left">
+  <img src="grenn_mart/ScreenShots/screen13.png" width="45%" />
+  <img src="grenn_mart/ScreenShots/screen14.png" width="45%" />
+
+</p>
+<p float="left">
+  <img src="grenn_mart/ScreenShots/screen15.png" width="45%" />
+  <img src="grenn_mart/ScreenShots/screen16.png" width="45%" />
+
 </p>
 ## 🚀 Features
 - Clean and intuitive splash screen
